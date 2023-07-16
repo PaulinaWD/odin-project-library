@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    
+
+    <title>Library</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+      <h1>library</h1>
+        <button class="btn-main" id="btn-new-book">New Book</button>
+      </div>
+    </header>
+    <main class="main-library">
+    
+    <div class="add-book-modal hidden">
+      <div class="close-modal"> &times;</div>
+        <form class="add-book-form-content"
+          action="example.com/path"
+          method="post"
+          autocomplete ='off'
+        >
+        <h3 class="add-book-form-title">Log a New Book</h3>
+          <label for="book_name"></label>
+          <input class="input"
+            type="text"
+            id="book_name"
+            name="book_name"
+            placeholder="*Name"
+          />
+          <p class="error-msg" id="errorMsg"></p>
+          <label for="book_author"></label>
+          <input
+          class="input" 
+            type="text"
+            id="book_author"
+            name="book_author"
+            placeholder="Author"
+          />
+          <label for="pages_number"></label>
+          <input
+          class="input" 
+            type="number"
+            id="pages_number"
+            name="pages_number"
+            placeholder="Pages"
+          />
+          <div class="have-you-read-it">
+          <label for="finished">Have you read it?</label>
+          <input type="checkbox" id="finished" name="finished" />
+          </div>
+          <button class="btn-main" id="btn-submit" type="submit">Submit</button>
+        </form>
+      </div>
+      <div class="add-book-overlay hidden"></div>
+    </div>
+    <div class = 'library-grid '>
+      
+      
+        </div>
+        </div>
+      </div>
+    </div>
+
+    </main>
+  </body>
+  <script src="index.js"></script>
+</html>
